@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --purple-bg: #290742;
+    --dark-bg: #170027;
+    --button-bg: #9e6dc2;
+    --white: #fff;
+    --light-purple: #fbf6ff;
+    --green: #4fff4b;
+}
+
 body {
     display: grid;
     grid-template-areas: 
@@ -7,16 +18,93 @@ body {
     "#posts #posts";
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    padding: 64px 135px 0 135px;
+}
+
+.container.home {
+    background-color: var(--purple-bg);
+}
+
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
 }
 
 header{
-    background-color: green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: var(--white);
+    font-weight: bold;
 }
 
-article#home-post {
-    background-color: yellow;
+#header-menu ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    gap: 32px;
 }
 
-article#posts {
-    background-color: orange;
+#header-menu li #selected {
+    border-left: 3px solid var(--green);
+    padding-left: 3px;
+}
+
+#header-menu a {    
+    display: block;
+    text-decoration: none;
+    color: var(--white);
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+#header-menu a:hover {
+    color: var(--green);
+}
+
+header #search {
+    display: flex;
+    align-items: center;
+}
+
+header #search-text-area {
+    width: 230px;
+    height: 44px;
+
+    outline: none;
+    border: none;
+    padding: 5px 20px;
+    background-color: var(--dark-bg);
+    color: var(--white);
+}
+
+header #search-text-area::-webkit-input-placeholder {
+    color: var(--light-purple);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+header #search-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 44px;
+
+    border: none;
+    background-color: var(--button-bg);
+}
+
+header #search-button:hover {
+    cursor: pointer;
 }

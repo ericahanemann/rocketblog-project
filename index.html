@@ -11,28 +11,41 @@
     <link rel="stylesheet" href="src/css/responsive.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container home">
         <header>
-            <img id="header-logo" src="src/images/logo.svg" alt="Logo RocketBlog">
-    
+            <a href="#">
+                <img id="header-logo" src="src/images/logo.svg" alt="Logo RocketBlog">
+            </a>
+
             <nav id="header-menu">
                 <ul>
-                    <li>Home</li>
-                    <li>Sobre</li>
-                    <li>Categorias</li>
-                    <li>Sobre</li>
+                    <li>
+                        <a href="#" id="selected">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="#">Categorias</a>
+                    </li>
+                    <li>
+                        <a href="#">Contato</a>
+                    </li>
                 </ul>
             </nav>
-    
+
             <form id="search" action="">
                 <input id="search-text-area" type="search" name="q" placeholder="Buscar">
+                
                 <button id="search-button">
                     <img src="src/images/search.svg" alt="Lupa botão de pesquisa">
                 </button>
             </form>
         </header>
-    
-        <main>
+    </div>
+
+    <main>
+        <div class="container home">
             <article id="home-post">
                 <div id="home-text">
                     <h1>Veja o guia definitivo para conquistar seus objetivos como DEV em 2022</h1>
@@ -47,55 +60,55 @@
                     <img src="src/images/featured-image.png" alt="">
                 </div>
             </article>
-    
-            <article id="posts">
-                <section>
-                    <div class="posts" id="post-01">
+        </div>
+
+        <article id="posts">
+            <section>
+                <div class="posts" id="post-01">
+                    <p>Janeiro 04, 2022</p>
+                    <h2>Começando no ReactJS em 2022</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, voluptatum. Suscipit, earum distinctio sequi incidunt, rem libero minima iusto eligendi aperiam expedita, fugit beatae? Dolore laborum quos voluptates suscipit velit?</p>
+                    <img src="src/images/post-1.png" alt="Notebook sobre uma mesa">
+                </div>
+
+                <div id="side-post">
+                    <div id="side-post-01">
                         <p>Janeiro 04, 2022</p>
                         <h2>Começando no ReactJS em 2022</h2>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, voluptatum. Suscipit, earum distinctio sequi incidunt, rem libero minima iusto eligendi aperiam expedita, fugit beatae? Dolore laborum quos voluptates suscipit velit?</p>
-                        <img src="src/images/post-1.png" alt="Notebook sobre uma mesa">
                     </div>
-    
-                    <div id="side-post">
-                        <div id="side-post-01">
-                            <p>Janeiro 04, 2022</p>
-                            <h2>Começando no ReactJS em 2022</h2>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, voluptatum. Suscipit, earum distinctio sequi incidunt, rem libero minima iusto eligendi aperiam expedita, fugit beatae? Dolore laborum quos voluptates suscipit velit?</p>
-                        </div>
 
-                        <div id="side-post-02">
-                            <p>Janeiro 04, 2022</p>
-                            <h2>Começando no ReactJS em 2022</h2>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, voluptatum. Suscipit, earum distinctio sequi incidunt, rem libero minima iusto eligendi aperiam expedita, fugit beatae? Dolore laborum quos voluptates suscipit velit?</p>
-                        </div>
-                    </div>
-                </section>
-    
-                <section>
-                    <div class="posts" id="post-02">
+                    <div id="side-post-02">
                         <p>Janeiro 04, 2022</p>
-                        <h2>10 dicas para conseguir a vaga desejada</h2>
+                        <h2>Começando no ReactJS em 2022</h2>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, voluptatum. Suscipit, earum distinctio sequi incidunt, rem libero minima iusto eligendi aperiam expedita, fugit beatae? Dolore laborum quos voluptates suscipit velit?</p>
-                        <img src="src/images/post-2.png" alt="Homem usando notebook">
                     </div>
-    
-                    <div class="posts" id="post-03">
-                        <p>Janeiro 04, 2022</p>
-                        <h2>Deixe seu código mais semântico com essas dicas</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, voluptatum. Suscipit, earum distinctio sequi incidunt, rem libero minima iusto eligendi aperiam expedita, fugit beatae? Dolore laborum quos voluptates suscipit velit?</p>
-                        <img src="src/images/post-3.png" alt="Código HTML">
-                    </div>
-    
-                    <div class="posts" id="post-04">
-                        <p>Janeiro 04, 2022</p>
-                        <h2>Use essas dicas nas suas aplicações mobile</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, voluptatum. Suscipit, earum distinctio sequi incidunt, rem libero minima iusto eligendi aperiam expedita, fugit beatae? Dolore laborum quos voluptates suscipit velit?</p>
-                        <img src="src/images/post-4.png" alt="Mão segurando celular">
-                    </div>
-                </section>
-            </article>
-        </main>
-    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="posts" id="post-02">
+                    <p>Janeiro 04, 2022</p>
+                    <h2>10 dicas para conseguir a vaga desejada</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, voluptatum. Suscipit, earum distinctio sequi incidunt, rem libero minima iusto eligendi aperiam expedita, fugit beatae? Dolore laborum quos voluptates suscipit velit?</p>
+                    <img src="src/images/post-2.png" alt="Homem usando notebook">
+                </div>
+
+                <div class="posts" id="post-03">
+                    <p>Janeiro 04, 2022</p>
+                    <h2>Deixe seu código mais semântico com essas dicas</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, voluptatum. Suscipit, earum distinctio sequi incidunt, rem libero minima iusto eligendi aperiam expedita, fugit beatae? Dolore laborum quos voluptates suscipit velit?</p>
+                    <img src="src/images/post-3.png" alt="Código HTML">
+                </div>
+
+                <div class="posts" id="post-04">
+                    <p>Janeiro 04, 2022</p>
+                    <h2>Use essas dicas nas suas aplicações mobile</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, voluptatum. Suscipit, earum distinctio sequi incidunt, rem libero minima iusto eligendi aperiam expedita, fugit beatae? Dolore laborum quos voluptates suscipit velit?</p>
+                    <img src="src/images/post-4.png" alt="Mão segurando celular">
+                </div>
+            </section>
+        </article>
+    </main>
 </body>
 </html>
