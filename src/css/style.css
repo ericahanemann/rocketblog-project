@@ -1,0 +1,22 @@
+body {
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "#home-post #home-post"
+    "#posts #posts"
+    "#posts #posts";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+header{
+    background-color: green;
+}
+
+article#home-post {
+    background-color: yellow;
+}
+
+article#posts {
+    background-color: orange;
+}
