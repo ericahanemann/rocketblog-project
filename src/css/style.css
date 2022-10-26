@@ -7,6 +7,7 @@
     --white: #fff;
     --light-purple: #fbf6ff;
     --green: #4fff4b;
+    --black: #000
 }
 
 body {
@@ -148,4 +149,57 @@ header #search-button:hover {
 
 #home-image {
     width: 570px;
+}
+
+
+main {
+    background-color: var(--light-purple);
+}
+
+a.posts {
+    display: block;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.posts p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    padding-bottom: 8px;
+    padding-top: 15px;
+}
+
+.posts h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--purple-bg);
+}
+
+#post-section-01 {
+    display: flex;
+    justify-content: space-between;
+    gap: 130px;
+    padding: 64px 0;
+}
+
+#post-section-01 #side-post-01 {
+    padding-bottom: 15px;
+}
+
+#bar {
+    height: 2px;
+    background-color: var(--button-bg);
+}
+
+#post-section-01 #side-post-02 {
+    padding-top: 15px;
+}
+
+#post-section-02 {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 64px 0;
 }
