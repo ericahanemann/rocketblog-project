@@ -114,6 +114,7 @@ header #search-button:hover {
 }
 
 #home-text {
+    flex: 1;
     color: var(--light-purple);
 }
 
@@ -148,7 +149,9 @@ header #search-button:hover {
 }
 
 #home-image {
-    width: 570px;
+    flex: 1;
+    width: auto;
+    height: 346px;
 }
 
 
